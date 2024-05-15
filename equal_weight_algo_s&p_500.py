@@ -33,7 +33,7 @@ These constituents change over time, so in an ideal world you would connect dire
 
 Paying for access to the index provider's API is outside of the scope of this course.
 
-There's a static version of the S&P 500 constituents available here. [Click this link to download them now](https://drive.google.com/file/d/1ZJSpbY69DVckVZlO9cC6KkgfSufybcHN/view?usp=sharing). Move this file into the `starter-files` folder so it can be accessed by other files in that directory.
+There's a static version of the S&P 500 constituents available here. [Click this link to download them now](https://github.com/ayush0801/Equal-Weight-Algorithm-for-Trading-S-P500/blob/main/sp500.csv).
 
 Now it's time to import these stocks to our Jupyter Notebook file.
 """
@@ -45,9 +45,7 @@ stocks
 
 Now it's time to import our IEX Cloud API token. This is the data provider that we will be using throughout this course.
 
-API tokens (and other sensitive information) should be stored in a `secrets.py` file that doesn't get pushed to your local Git repository. We'll be using a sandbox API token in this course, which means that the data we'll use is randomly-generated and (more importantly) has no cost associated with it.
-
-[Click here](http://nickmccullum.com/algorithmic-trading-python/secrets.py) to download your `secrets.py` file. Move the file into the same directory as this Jupyter Notebook before proceeding.
+API tokens (and other sensitive information) should be stored in a `secrets.py` file that doesn't get pushed to your local Git repository. I have passed the API_TOKEN as a variable in the secrets in Google Colab. You can save the same in `secrets.py` for using Jupyter Notebook. Move the file into the same directory as this Jupyter Notebook before proceeding.
 """
 
 from google.colab import userdata
